@@ -40,13 +40,53 @@ body {
 #nav_bar ul {
     list-style: none;
     display: flex;
-    justify-content:right;
+    justify-content: right;
 }
 
-#nav_bar ul li {
+nav ul li {
     color: WHITE;
     text-shadow: 1px 0 0 rgb(0, 0, 0), -1px 0 0 rgb(0, 0, 0), 0 1px 0 rgb(0, 0, 0), 0 -1px 0 rgb(0, 0, 0), 1px 1px rgb(0, 0, 0), -1px -1px 0 rgb(0, 0, 0), 1px -1px 0 rgb(0, 0, 0), -1px 1px 0 rgb(0, 0, 0);
     padding: 0.6em 1em 0.5em 1em;
+}
+
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: 800;
+    text-transform: uppercase;
+    margin: 0 10px;
+}
+
+nav ul li a, nav ul li a:after, nav ul li a:before  {
+    transition: all .5s;
+}
+  
+nav ul li a:hover   {
+    color: rgb(241, 147, 59);
+}
+  
+  
+/* nav bar effect */
+nav.stroke ul li a {
+    position: relative;
+}
+
+nav.stroke ul li a:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: rgb(235, 112, 42);
+    height: 1px;
+}
+
+nav.stroke ul li a:hover:after {
+    width: 100%;
 }
 
 @media only screen and (max-width: 580px) {
@@ -64,7 +104,6 @@ body {
     }
     #top_bar h1 {
         display: none;
-        background
     }
     #nav_bar   {
         width: 100%;
@@ -116,7 +155,7 @@ body {
 .redes {
     list-style: none;
     display: flex;
-    justify-content:center;
+    justify-content: center;
 }
 
 /* PÁGINA TRABAJOS */
@@ -207,4 +246,40 @@ body {
     #trabajos {
         grid-template-columns: 1fr 1fr;
     }
+}
+
+/* PÁGINA ABOUT */
+
+#main_div {
+    width: 100%;
+    text-align: center;
+    color: white;
+    background: rgb(236,175,4);
+    background: linear-gradient(90deg, rgba(236,175,4,1) 3%, rgba(0,0,0,1) 25%, rgba(0,0,0,1) 72%, rgba(236,175,4,1) 97%);
+}
+
+#second_div {
+    font-family: 'Montserrat', sans-serif;
+    width: 40%;
+    display: inline-block;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+#header_about {
+    display: flex;
+    height: 50px;
+    background-size: cover;
+    background-position: center center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#top_bar_about    {
+    width: 40%;
+}
+
+#top_bar_about h1 {
+    padding: 0.05em 1em 0em 0.35em;
+    color: WHITE;
+    text-shadow: 1px 0 0 rgb(0, 0, 0), -1px 0 0 rgb(0, 0, 0), 0 1px 0 rgb(0, 0, 0), 0 -1px 0 rgb(0, 0, 0), 1px 1px rgb(0, 0, 0), -1px -1px 0 rgb(0, 0, 0), 1px -1px 0 rgb(0, 0, 0), -1px 1px 0 rgb(0, 0, 0);
 }
