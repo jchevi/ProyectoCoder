@@ -1,33 +1,66 @@
-.navbar {
-    background: rgba(255, 255, 255) !important;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0px;
-}
+/* font-family: 'Open Sans', sans-serif; */
 
+body {
+    background-color: black;
+}
 
 a, a:hover, a:focus, a:active {
     text-decoration: none;
     color: inherit;
 }
 
-body {
-    background-color: black;
-}
-
 /* HEADER HEADER HEADER HEADER */
 
 #back_image {
-    height: 700px;
-    background-image: url("../multimedia/index_background2.jpg");
+    height: 800px;
+    background-image: url("../multimedia/index_background3.jpg");
     background-size: cover;
     background-position: center center;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
 }
 
-#back_image2 {
+.navbar-brand {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 40px;
+    color: white !important;
+}
+
+.navbar {
+    background: rgba(255, 255, 255, 0) !important;
+    /* position: -webkit-sticky;
+    position: sticky;
+    top: 0px; */
+}
+
+.nav-link {
+    color: white !important;
+}
+
+.index__video {
+    color: orange;
+    font-size: 40px;
+    text-decoration: underline;
+}
+
+.section1 {
+    background-image: url("../multimedia/video_background_image.JPG");
+    background-size: cover;
+    background-position: center center;
+    font-family: 'Open Sans', sans-serif;
+    color: orange;
+    font-size: 40px;
     height: 700px;
-    background-image: url("../multimedia/wave_background.png");
+}
+
+a:hover {
+    color: rgb(255, 188, 62);
+}
+
+/* CONTACTO CONTACTO CONTACTO CONTACTO */
+
+#contactSection {
+    background: rgb(241, 241, 241) !important;
 }
 
 /* #top_bar    {
@@ -99,9 +132,9 @@ nav.stroke ul li a:hover:after {
     /* #nav_bar ul {
         flex-wrap: wrap;
     } */
-    #back_image {
+    /* #back_image {
         height: 50px;
-    }
+    } */
 }
 
  /* @media only screen and (max-width: 1024px) {
@@ -123,19 +156,9 @@ nav.stroke ul li a:hover:after {
 
 /* INDEX SECTION 1 */
 
-.section1 {
-    width: 100%;
-    height: 900px;
-    background-image: url("./multimedia/index_background.jpg");
-    background-size: cover;
-    background-position: center center;
-}
 
-.section1 .index__video {
-    padding-top: 145px;
-}
 
-@media only screen and (max-width: 580px) {
+/* @media only screen and (max-width: 580px) {
     .section1 {
         width: 100%;
         height: 300px;
@@ -147,10 +170,10 @@ nav.stroke ul li a:hover:after {
     .section1 .index__video {
         padding-top: 75px;
     }
-}
+} */
 
 /* FOOTER */
-
+/* 
 #footer {
     height: 200px;
     background-color: black;
@@ -162,7 +185,7 @@ nav.stroke ul li a:hover:after {
     list-style: none;
     display: flex;
     justify-content: center;
-}
+} */
 
 /* PÁGINA TRABAJOS */
 

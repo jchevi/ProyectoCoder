@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="en" class="js-focus-visible" data-js-focus-visible=""><script>(function(){const e=()=>{};let t=null,o=null,n=[],s=e,r=e,i=e,c=e;try{s=window.fetch,r=window.XMLHttpRequest.prototype.open,i=window.XMLHttpRequest.prototype.send,c=window.XMLHttpRequest.prototype.setRequestHeader}catch(e){0}function a(e,t){try{const[o,n]=function(e){const t="/"===e[0],o=t?`${window.location.protocol}//${window.location.host}${e}`:e;return[new URL(o),t]}(e),s=new URLSearchParams(o.searchParams);if(!s.has(t))return e;s.delete(t);const r=""===s.toString()?"":"?";return n?`${o.pathname}${r}${s.toString()}`:`${o.protocol}//${o.host}${o.pathname}${r}${s.toString()}`}catch(t){return e}}function E(e){return!(!window.XMLHttpRequest||!window.XMLHttpRequest.prototype||"function"!=typeof window.XMLHttpRequest.prototype[e])}function d(){let e=[];return{subscribe:t=>{e.push(t)},next:t=>{e.length&&e.forEach((e=>e(t)))},clear:()=>{e.length=0}}}const l=new d,u=new WeakMap,T=new WeakMap,_=new WeakMap;E("open")&&E("send")&&E("setRequestHeader")&&(window.XMLHttpRequest.prototype.open=function(...e){if(u.set(this,{method:e[0]&&e[0].toUpperCase()||"GET"}),!0===this.__amicabletbecoxhro||"OFF"===t){r.apply(this,e);const t=T.get(this);t&&t.next()}else{const t=T.get(this)||new d;T.set(this,t),this.__headersReady=function(e,t){let o=null;return()=>{o&&clearTimeout(o),o=setTimeout((()=>{e()}),t)}}((()=>{this.__onPendingHeadersSet&&this.__onPendingHeadersSet()}),50),l.subscribe((()=>{E("open")&&window.XMLHttpRequest.prototype.open.apply(this,e)}))}},window.XMLHttpRequest.prototype.setRequestHeader=function(...e){if(this.readyState===XMLHttpRequest.OPENED||"OFF"===t)c.apply(this,e);else{_.set(this,!0);const t=T.get(this);t&&t.subscribe((()=>{c.apply(this,e),this.__headersReady()}))}},window.XMLHttpRequest.prototype.send=function(e){if(this.addEventListener("readystatechange",(()=>{if("OFF"!==o&&this.readyState===XMLHttpRequest.DONE)try{const t=u.get(this),s=t&&"string"==typeof t.method&&t.method.toUpperCase()||"";let r,i=[];try{const e=this.getAllResponseHeaders();i=(e&&e.trim().split(/[\r\n]+/)).reduce(((e,t)=>{try{const o=t.split(": "),n=o.shift(),s=o.join(": ");e.push({active:!0,header:n,value:s})}catch(e){}return e}),[])}catch(e){i=[]}try{r="string"==typeof this.response?this.response:JSON.stringify(this.response)}catch(e){r=this.response}const c={type:"STASH_REQUESTS",payload:[[{method:s,requestURL:this.responseURL,responsePayload:r,requestPayload:e,status:this.status,timestamp:Date.now(),responseHeaders:i}]]};"ON"===o?window.postMessage(c,"*"):n.push(c.payload[0][0])}catch(e){}})),"OFF"===t)i.call(this,e);else if(_.get(this))this.__onPendingHeadersSet=()=>{_.delete(this),E("send")&&window.XMLHttpRequest.prototype.send.call(this,e),this.__onPendingHeadersSet=null};else if(this.readyState===XMLHttpRequest.OPENED&&!0===this.__amicabletbebypoxhrs){Object.defineProperty(this,"readyState",{writable:!0,configurable:!0,value:XMLHttpRequest.LOADING});const e=new Event("readystatechange");this.dispatchEvent(e)}else if(this.readyState===XMLHttpRequest.OPENED&&!0===this.__amicabletbecoxhrs)i.call(this,e);else{const t=T.get(this);t&&t.subscribe((()=>{E("send")&&(window.XMLHttpRequest.prototype.send.call(this,e),this.__onopened=null)}))}}),window.fetch=(...e)=>{const[r,i]=e,c="string"==typeof r,E=c?i&&i.method:r&&r.method,d=function(e,t){return new Promise((o=>{if("string"==typeof e){const e=t&&t.body||null;o(e)}else try{e.clone().text().then((e=>{o(e)})).catch((e=>{o(null)}))}catch(e){o(null)}}))}(r,i);let u=c?r:r.url||"";const T=a(u,"amicabletbecof");let _=r,p=!1;if(T!==u){p=!0;try{c?_=T:Object.defineProperty(_,"url",{writable:!0,configurable:!0,value:T}),u=T}catch(e){0}}return p||"OFF"===t?s(_,i).then((async e=>{if("OFF"===o)return e;try{const t=await d;let s;try{s=t.replace(/\s/gi,"")}catch(e){s=t}const r=e.clone(),i=await r.text();let c=[];try{for(const e of r?.headers?.entries()){const t=e[0],o=e[1];c.push({active:!0,header:t,value:o})}}catch(e){c=[]}const a={type:"STASH_REQUESTS",payload:[[{method:E&&E.toUpperCase()||"GET",requestURL:u,responsePayload:i,requestPayload:s,responseHeaders:c,status:e.status,timestamp:Date.now()}]]};"ON"===o?window.postMessage(a,"*"):n.push(a.payload[0][0])}catch(e){}return e})):((...e)=>new Promise((t=>{l.subscribe((()=>{t(window.fetch(...e))}))})))(...e)},l.subscribe((()=>{try{window.postMessage({type:"__TWEAK_BOOTSTRAP_FINISHED__",payload:[]})}catch(e){0}}));const p=["ON","OFF"];setTimeout((()=>{t&&p.includes(t)||(t="OFF",l.next())}),5e3),window.__onttis=e=>{e&&p.includes(e)&&(t&&p.includes(t)?t=e:(t=e,l.next()))},window.__onttss__=(e,t)=>{if(e&&p.includes(e)){if("OFF"===e&&"user"===t&&n.length)n=[];else if("ON"===e&&"system"===t&&n.length)try{window.postMessage({type:"STASH_REQUESTS",payload:[n]})}catch(e){0}n=[],o=e}}})();</script><script id="__tweak_browser_extension_intercept_script__" async="false" defer="false" src="chrome-extension://feahianecghpnipmhphmfgmpdodhcapi/intercept.bundle.js"></script><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- BOOTSTRAP -->
+    
+    <!-- CSS -->
+    
+    <!-- FONTS -->
+    
+    <!-- TITULO -->
+    <title>ESTUDIO FOCAL TRIP - Home</title>
+<style type="text/css">
+@font-face {
+  font-weight: 400;
+  font-style:  normal;
+  font-family: 'Circular-Loom';
+
+  src: url('https://cdn.loom.com/assets/fonts/circular/CircularXXWeb-Book-cd7d2bcec649b1243839a15d5eb8f0a3.woff2') format('woff2');
+}
+
+@font-face {
+  font-weight: 500;
+  font-style:  normal;
+  font-family: 'Circular-Loom';
+
+  src: url('https://cdn.loom.com/assets/fonts/circular/CircularXXWeb-Medium-d74eac43c78bd5852478998ce63dceb3.woff2') format('woff2');
+}
+
+@font-face {
+  font-weight: 700;
+  font-style:  normal;
+  font-family: 'Circular-Loom';
+
+  src: url('https://cdn.loom.com/assets/fonts/circular/CircularXXWeb-Bold-83b8ceaf77f49c7cffa44107561909e4.woff2') format('woff2');
+}
+
+@font-face {
+  font-weight: 900;
+  font-style:  normal;
+  font-family: 'Circular-Loom';
+
+  src: url('https://cdn.loom.com/assets/fonts/circular/CircularXXWeb-Black-bf067ecb8aa777ceb6df7d72226febca.woff2') format('woff2');
+}</style><link href="./ESTUDIO FOCAL TRIP - Home_files/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"><link rel="stylesheet" href="./ESTUDIO FOCAL TRIP - Home_files/styles.css"><link rel="preconnect" href="https://fonts.googleapis.com/"><link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin=""><link href="./ESTUDIO FOCAL TRIP - Home_files/css2" rel="stylesheet"></head>
+<body>
+    <header>
+        <section class="container-fluid p-0 back_image">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light p-5">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="http://127.0.0.1:5500/index.html#">FOCAL TRIP</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse flex-row-reverse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link active" aria-current="page" href="http://127.0.0.1:5500/index.html#">HOME</a>
+                  <a class="nav-link" href="http://127.0.0.1:5500/pages/about.html">NOSOTROS</a>
+                  <a class="nav-link" href="http://127.0.0.1:5500/pages/trabajos.html">TRABAJOS</a>
+                  <a class="nav-link" href="http://127.0.0.1:5500/pages/servicios.html">SERVICIOS</a>
+                  <a class="nav-link" href="http://127.0.0.1:5500/pages/contact.html">CONTACTO</a>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </section> 
+    </header>
+    <main class="container-fluid">
+        <section class="section1">
+            <div class="index__video" align="center">
+                <iframe width="560" height="315" src="./ESTUDIO FOCAL TRIP - Home_files/2GkqNHddLjw.html" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+            </div>
+        </section>
+        <section class="carrusel">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3" class="active" aria-current="true"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item">
+                        <img src="./ESTUDIO FOCAL TRIP - Home_files/foto1.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./ESTUDIO FOCAL TRIP - Home_files/foto2.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item active">
+                        <img src="./ESTUDIO FOCAL TRIP - Home_files/foto3.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+    </section>
+    </main>   
+    <footer class="container-fluid" id="footer">
+        <div class="redes">
+            <ul>
+                <li><a href="https://www.instagram.com/">IG</a></li>
+                <li><a href="https://www.facebook.com/">FB</a></li>
+                <li><a href="https://twitter.com/home">TW</a></li>
+            </ul>
+        </div>
+    </footer>
+    <!-- BOOTSTRAP JS -->
+    <script src="./ESTUDIO FOCAL TRIP - Home_files/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script><script src="./ESTUDIO FOCAL TRIP - Home_files/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body><loom-container id="lo-engage-ext-container"><loom-shadow classname="resolved"></loom-shadow></loom-container><loom-container id="lo-companion-container"><loom-shadow classname="resolved"></loom-shadow></loom-container></html>
