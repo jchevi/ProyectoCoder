@@ -1,0 +1,35 @@
+.index__video {
+    color: orange;
+    font-size: 40px;
+    text-decoration: underline;
+}
+
+.section1 {
+    background-image: url("../multimedia/video_background_image.JPG");
+    background-size: cover;
+    background-position: center center;
+    font-family: $font1;
+    color: orange;
+    font-size: 40px;
+    height: 700px;
+}
+
+a:hover {
+    color: rgb(255, 188, 62);
+}
+
+/* @media only screen and (max-width: 580px) {
+    .section1 {
+        width: 100%;
+        height: 300px;
+    }
+    .section1 .index__video iframe {
+        height: 157.5px;
+        width: 280px;
+    }
+    .section1 .index__video {
+        padding-top: 75px;
+    }
+} */
+
+

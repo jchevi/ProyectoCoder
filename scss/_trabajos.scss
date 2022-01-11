@@ -1,0 +1,87 @@
+/* #header_trabajos {
+        display: flex;
+        height: 800px;
+        background-image: url("../multimedia/header_trabajos_background.jpg");
+        background-size: cover;
+        background-position: center center;
+        font-family: 'Montserrat', sans-serif;
+}
+
+#trabajos {
+    padding: 20px;
+    background-color: orange;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 30px;
+}
+
+.foto {
+    border: 1px solid black;
+    height: 200px;
+    min-width: 100px;
+}
+
+.foto.foto1 {
+    background-image: url("../multimedia/trabajos/foto1.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+.foto.foto2 {
+    background-image: url("../multimedia/trabajos/foto2.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+.foto.foto3 {
+    background-image: url("../multimedia/trabajos/foto3.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+.foto.foto4 {
+    background-image: url("../multimedia/trabajos/foto4.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+.foto.foto5 {
+    background-image: url("../multimedia/trabajos/foto5.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+.foto.foto6 {
+    background-image: url("../multimedia/trabajos/foto6.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+.foto.foto7 {
+    background-image: url("../multimedia/trabajos/foto7.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+.foto.foto8 {
+    background-image: url("../multimedia/trabajos/foto8.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+
+.foto:hover {
+    transform: scale(2);
+    transition: all 0.9s;
+}
+
+@media only screen and (max-width: 580px) {
+    #trabajos {
+        grid-template-columns: 1fr;
+    }
+}
+
+ @media only screen and (max-width: 1024px){
+    #trabajos {
+        grid-template-columns: 1fr 1fr;
+    }
+} */

@@ -1,0 +1,19 @@
+@import "variables";
+@import "header";
+@import "main";
+@import "footer";
+@import "index";
+@import "about";
+@import "contact";
+@import "servicios";
+@import "trabajos";
+
+body {
+    background-color: black;
+    font-family: $font1;
+}
+
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}
