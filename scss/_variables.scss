@@ -1,1 +1,13 @@
 $font1: 'Open Sans', sans-serif;
+
+//maps
+
+$palette: (
+    'blanco': white,
+    'negro': black,
+    'naranja': orange,
+)
+
+//map-get
+
+// map-get($map: $palette, $key: 'blanco');
