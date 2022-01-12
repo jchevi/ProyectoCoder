@@ -1,22 +1,22 @@
-/* #header_trabajos {
-        display: flex;
-        height: 800px;
-        background-image: url("../multimedia/header_trabajos_background.jpg");
-        background-size: cover;
-        background-position: center center;
-        font-family: 'Montserrat', sans-serif;
-}
+// #header_trabajos {
+//         display: flex;
+//         height: 800px;
+//         background-image: url("../multimedia/header_trabajos_background.jpg");
+//         background-size: cover;
+//         background-position: center center;
+//         font-family: $font1;
+// }
 
 #trabajos {
     padding: 20px;
-    background-color: orange;
+    background-color: black;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 30px;
 }
 
 .foto {
-    border: 1px solid black;
+    border: 1px solid map-get($map: $palette, $key: 'blanco');
     height: 200px;
     min-width: 100px;
 }
@@ -84,4 +84,4 @@
     #trabajos {
         grid-template-columns: 1fr 1fr;
     }
-} */
+}

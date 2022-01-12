@@ -1,26 +1,29 @@
-header #back_image {
-  height: 800px;
-  background-image: url("../multimedia/index_background3.jpg");
+header .nav_styling--index {
   background-size: cover;
   background-position: center center;
   font-family: "Open Sans", sans-serif;
   font-size: 18px;
 }
 
-header #back_image .navbar {
+header .nav_styling--index {
+  height: 800px;
+  background-image: url("../multimedia/index_background3.jpg");
+}
+
+header .nav_styling--index .navbar {
   background: rgba(255, 255, 255, 0) !important;
   /* position: -webkit-sticky;
             position: sticky;
             top: 0px; */
 }
 
-header #back_image .navbar .navbar-brand {
+header .nav_styling--index .navbar .navbar-brand {
   font-family: "Open Sans", sans-serif;
   font-size: 40px;
   color: white !important;
 }
 
-header #back_image .navbar .nav-link {
+header .nav_styling--index .navbar .nav-link {
   color: white !important;
 }
 
@@ -53,8 +56,16 @@ header #back_image .navbar .nav-link {
   height: 700px;
 }
 
-a:hover {
+.section span {
+  background-color: white;
+  padding: 5px 20px 5px 20px;
+  -webkit-transition: all 2s;
+  transition: all 2s;
+}
+
+.section span:hover {
   color: #ffbc3e;
+  background-color: black;
 }
 
 /* @media only screen and (max-width: 580px) {
@@ -185,93 +196,102 @@ nav.stroke ul li a:hover:after {
         justify-content: center;
     }
 } */
-/* #header_trabajos {
-        display: flex;
-        height: 800px;
-        background-image: url("../multimedia/header_trabajos_background.jpg");
-        background-size: cover;
-        background-position: center center;
-        font-family: 'Montserrat', sans-serif;
+#header_trabajos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 800px;
+  background-image: url("../multimedia/header_trabajos_background.jpg");
+  background-size: cover;
+  background-position: center center;
+  font-family: 'Montserrat', sans-serif;
 }
 
 #trabajos {
-    padding: 20px;
-    background-color: orange;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 30px;
+  padding: 20px;
+  background-color: orange;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 30px;
 }
 
 .foto {
-    border: 1px solid black;
-    height: 200px;
-    min-width: 100px;
+  border: 1px solid black;
+  height: 200px;
+  min-width: 100px;
 }
 
 .foto.foto1 {
-    background-image: url("../multimedia/trabajos/foto1.jpg");
-    background-size: cover;
-    background-position: center center;
+  background-image: url("../multimedia/trabajos/foto1.jpg");
+  background-size: cover;
+  background-position: center center;
 }
 
 .foto.foto2 {
-    background-image: url("../multimedia/trabajos/foto2.jpg");
-    background-size: cover;
-    background-position: center center;
+  background-image: url("../multimedia/trabajos/foto2.jpg");
+  background-size: cover;
+  background-position: center center;
 }
 
 .foto.foto3 {
-    background-image: url("../multimedia/trabajos/foto3.jpg");
-    background-size: cover;
-    background-position: center center;
+  background-image: url("../multimedia/trabajos/foto3.jpg");
+  background-size: cover;
+  background-position: center center;
 }
 
 .foto.foto4 {
-    background-image: url("../multimedia/trabajos/foto4.jpg");
-    background-size: cover;
-    background-position: center center;
+  background-image: url("../multimedia/trabajos/foto4.jpg");
+  background-size: cover;
+  background-position: center center;
 }
 
 .foto.foto5 {
-    background-image: url("../multimedia/trabajos/foto5.jpg");
-    background-size: cover;
-    background-position: center center;
+  background-image: url("../multimedia/trabajos/foto5.jpg");
+  background-size: cover;
+  background-position: center center;
 }
 
 .foto.foto6 {
-    background-image: url("../multimedia/trabajos/foto6.jpg");
-    background-size: cover;
-    background-position: center center;
+  background-image: url("../multimedia/trabajos/foto6.jpg");
+  background-size: cover;
+  background-position: center center;
 }
 
 .foto.foto7 {
-    background-image: url("../multimedia/trabajos/foto7.jpg");
-    background-size: cover;
-    background-position: center center;
+  background-image: url("../multimedia/trabajos/foto7.jpg");
+  background-size: cover;
+  background-position: center center;
 }
 
 .foto.foto8 {
-    background-image: url("../multimedia/trabajos/foto8.jpg");
-    background-size: cover;
-    background-position: center center;
+  background-image: url("../multimedia/trabajos/foto8.jpg");
+  background-size: cover;
+  background-position: center center;
 }
 
 .foto:hover {
-    transform: scale(2);
-    transition: all 0.9s;
+  -webkit-transform: scale(2);
+          transform: scale(2);
+  -webkit-transition: all 0.9s;
+  transition: all 0.9s;
 }
 
 @media only screen and (max-width: 580px) {
-    #trabajos {
+  #trabajos {
+    -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    }
+  }
 }
 
- @media only screen and (max-width: 1024px){
-    #trabajos {
+@media only screen and (max-width: 1024px) {
+  #trabajos {
+    -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
-    }
-} */
+  }
+}
+
 body {
   background-color: black;
   font-family: "Open Sans", sans-serif;

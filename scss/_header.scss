@@ -1,11 +1,15 @@
+%custom_nav_properties {
+    background-size: cover;
+    background-position: center center;
+    font-family: $font1;
+    font-size: 18px;    
+}
+
 header {
-    & #back_image {
+    & .nav_styling--index {
+        @extend %custom_nav_properties;
         height: 800px;
         background-image: url("../multimedia/index_background3.jpg");
-        background-size: cover;
-        background-position: center center;
-        font-family: $font1;
-        font-size: 18px;
         & .navbar {
             background: rgba(255, 255, 255, 0) !important;
             /* position: -webkit-sticky;
@@ -22,6 +26,33 @@ header {
         }
     }        
 }
+
+
+
+// header {
+//     & #back_image {
+//         height: 800px;
+//         background-image: url("../multimedia/index_background3.jpg");
+//         background-size: cover;
+//         background-position: center center;
+//         font-family: $font1;
+//         font-size: 18px;
+//         & .navbar {
+//             background: rgba(255, 255, 255, 0) !important;
+//             /* position: -webkit-sticky;
+//             position: sticky;
+//             top: 0px; */
+//             & .navbar-brand {
+//                 font-family: $font1;
+//                 font-size: 40px;
+//                 color: white !important;
+//             }
+//             & .nav-link {
+//                 color: white !important;
+//             }
+//         }
+//     }        
+// }
 
 // #back_image {
 //     height: 800px;
