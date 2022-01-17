@@ -1,3 +1,5 @@
+// EXTEND PROP
+
 %custom_nav_properties {
     background-size: cover;
     background-position: center center;
@@ -5,78 +7,50 @@
     font-size: 18px;    
 }
 
+// INDEX HEADER
+
 header {
     & .nav_styling--index {
         @extend %custom_nav_properties;
         height: 800px;
         background-image: url("../multimedia/index_background3.jpg");
         & .navbar {
-            background: rgba(255, 255, 255, 0) !important;
-            /* position: -webkit-sticky;
-            position: sticky;
-            top: 0px; */
+            background: rgba(0, 0, 0, 0) !important;
             & .navbar-brand {
                 font-family: $font1;
                 font-size: 40px;
                 color: white !important;
+                & .nav-link {
+                    color: rgba(0, 0, 0, 0.658) !important;
+                        &:hover {
+                        color: white !important;
+                    }
+                }
             }
-            & .nav-link {
-                color: white !important;
-            }
-        }
-    }        
+        }        
+    }
 }
 
+// REST OF THE HEADERS
 
-
-// header {
-//     & #back_image {
-//         height: 800px;
-//         background-image: url("../multimedia/index_background3.jpg");
-//         background-size: cover;
-//         background-position: center center;
-//         font-family: $font1;
-//         font-size: 18px;
-//         & .navbar {
-//             background: rgba(255, 255, 255, 0) !important;
-//             /* position: -webkit-sticky;
-//             position: sticky;
-//             top: 0px; */
-//             & .navbar-brand {
-//                 font-family: $font1;
-//                 font-size: 40px;
-//                 color: white !important;
-//             }
-//             & .nav-link {
-//                 color: white !important;
-//             }
-//         }
-//     }        
-// }
-
-// #back_image {
-//     height: 800px;
-//     background-image: url("../multimedia/index_background3.jpg");
-//     background-size: cover;
-//     background-position: center center;
-//     font-family: 'Open Sans', sans-serif;
-//     font-size: 18px;
-// }
-
-// .navbar-brand {
-//     font-family: 'Open Sans', sans-serif;
-//     font-size: 40px;
-//     color: white !important;
-// }
-
-// .navbar {
-//     background: rgba(255, 255, 255, 0) !important;
-//     /* position: -webkit-sticky;
-//     position: sticky;
-//     top: 0px; */
-// }
-
-// .nav-link {
-//     color: white !important;
-// }
+header {
+    & .nav_styling {
+        @extend %custom_nav_properties;
+        background: rgb(0, 0, 0) !important;
+        & .navbar {
+            background: rgba(0, 0, 0, 0) !important;
+            & .navbar-brand {
+                font-family: $font1;
+                font-size: 40px;
+                color: white !important;
+                & .nav-link {
+                    color: rgba(0, 0, 0, 0.658) !important;
+                        &:hover {
+                        color: white !important;
+                    }
+                }
+            }
+        }        
+    }
+}
 

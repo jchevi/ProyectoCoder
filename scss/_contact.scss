@@ -2,91 +2,27 @@
     background: rgb(241, 241, 241) !important;
 }
 
-/* #top_bar    {
-    width: 40%;
-} */
-
-/* #navbar a {
-    color: WHITE;
-    text-shadow: 1px 0 0 rgb(0, 0, 0), -1px 0 0 rgb(0, 0, 0), 0 1px 0 rgb(0, 0, 0), 0 -1px 0 rgb(0, 0, 0), 1px 1px rgb(0, 0, 0), -1px -1px 0 rgb(0, 0, 0), 1px -1px 0 rgb(0, 0, 0), -1px 1px 0 rgb(0, 0, 0);
-} */
-
-/* #nav_bar   {
-    width: 60%;
-} */
-
-/* #nav_bar ul {
-    list-style: none;
-    display: flex;
-    justify-content: right;
-} */
-
-/* nav ul li {
-    color: WHITE;
-    text-shadow: 1px 0 0 rgb(0, 0, 0), -1px 0 0 rgb(0, 0, 0), 0 1px 0 rgb(0, 0, 0), 0 -1px 0 rgb(0, 0, 0), 1px 1px rgb(0, 0, 0), -1px -1px 0 rgb(0, 0, 0), 1px -1px 0 rgb(0, 0, 0), -1px 1px 0 rgb(0, 0, 0);
-    padding: 0.6em 1em 0.5em 1em; */
-
-/* nav ul li a {
-    display: block;
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    font-weight: 800;
-    text-transform: uppercase;
-    margin: 0 10px;
-} */
-
-/* nav ul li a, nav ul li a:after, nav ul li a:before  {
-    transition: all .5s;
-} */
-  
-/* nav ul li a:hover   {
-    color: rgb(241, 147, 59);
-} */
-  
-  
-/* nav bar effect */
-/* nav.stroke ul li a {
+#contactSection iframe {
     position: relative;
+    overflow: hidden;
 }
 
-nav.stroke ul li a:after {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    width: 0%;
-    content: '.';
-    color: transparent;
-    background: rgb(235, 112, 42);
-    height: 1px;
-}
-
-nav.stroke ul li a:hover:after {
-    width: 100%;
-} */
-
-@media only screen and (max-width: 580px) {
-    /* #nav_bar ul {
-        flex-wrap: wrap;
-    } */
-    /* #back_image {
-        height: 50px;
-    } */
-}
-
- /* @media only screen and (max-width: 1024px) {
-    #top_bar    {
-        width: 0%;
+@media only screen and (max-width: 1024px) {
+    .nav_styling--index {
+      background-position: 70% 50% !important;
     }
-    #top_bar h1 {
-        display: none;
+    .section1 .index__video iframe {
+      height: 75%;
+      width: 75%;
     }
-    #nav_bar   {
-        width: 100%;
-        justify-content: center;
+  }
+  
+  @media only screen and (max-width: 580px) {
+    .nav_styling--index {
+      background-position: 85% 50% !important;
     }
-    #nav_bar ul {
-        justify-content: center;
+    .section1 .index__video iframe {
+      height: 75%;
+      width: 75%;
     }
-} */
+  }

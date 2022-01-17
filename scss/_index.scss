@@ -1,7 +1,6 @@
 .index__video {
-    color: map-get($map: $palette, $key: 'naranja');;
+    color: orange;
     font-size: 40px;
-    text-decoration: underline;
 }
 
 .section1 {
@@ -9,43 +8,52 @@
     background-size: cover;
     background-position: center center;
     font-family: $font1;
-    color: map-get($map: $palette, $key: 'naranja');
+    color: orange;
     font-size: 40px;
     height: 700px;
 }
 
-@mixin custom_button_padding ($paddingTop, $paddingLeft, $paddingBottom, $paddingRight {
-    padding-top: $paddingTop;
-    padding-right: $paddingRight;
-    padding-bottom: $paddingBottom;
-    padding-left: $paddingLeft;
-})
-
-.section span {
-    @include cusotm_button_padding(5px, 20px, 5px, 20px);
-    background-color: map-get($map: $palette, $key: 'blanco');
-    transition: all 2s;
-}
-
 .section span:hover {
     color: rgb(255, 188, 62);
-    background-color: map-get($map: $palette, $key: 'negro');
+    background-color: black;
 }
-
-
-
-/* @media only screen and (max-width: 580px) {
-    .section1 {
-        width: 100%;
-        height: 300px;
+  
+  .section1 {
+    height: 600px;
+    background-image: url("../multimedia/video_background_image.JPG");
+    background-size: cover;
+    background-position: center center;
+    color: #ffa600;
+    font-size: 1.5rem;
+  }
+  
+  .section1 .seeMore span {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 5px 20px 5px 20px;
+    margin-top: 50px;
+    transition: all 1s;
+  }
+  
+  .section1 span:hover {
+    color: #ffbe47;
+  }
+  
+  @media only screen and (max-width: 1024px) {
+    .nav_styling--index {
+      background-position: 70% 50% !important;
     }
     .section1 .index__video iframe {
-        height: 157.5px;
-        width: 280px;
+      height: 75%;
+      width: 75%;
     }
-    .section1 .index__video {
-        padding-top: 75px;
+  }
+  
+  @media only screen and (max-width: 580px) {
+    .nav_styling--index {
+      background-position: 85% 50% !important;
     }
-} */
-
-
+    .section1 .index__video iframe {
+      height: 75%;
+      width: 75%;
+    }
+  }
