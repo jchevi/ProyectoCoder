@@ -2,27 +2,38 @@
     background: rgb(241, 241, 241) !important;
 }
 
+.map-responsive{
+  overflow:hidden;
+  position:relative;
+}
+
 #contactSection iframe {
     position: relative;
     overflow: hidden;
+    left:0;
+    top:0;
 }
 
 @media only screen and (max-width: 1024px) {
-    .nav_styling--index {
-      background-position: 70% 50% !important;
+    .donde {
+      padding-top: 2rem;
+      text-align: center;
     }
-    .section1 .index__video iframe {
-      height: 75%;
-      width: 75%;
+    .form h3 {
+      text-align: center;
+    }
+    iframe {
+      text-align:center;
+  		width:100%;
     }
   }
   
   @media only screen and (max-width: 580px) {
-    .nav_styling--index {
-      background-position: 85% 50% !important;
+    .donde {
+      padding-top: 2rem;
+      text-align: center;
     }
-    .section1 .index__video iframe {
-      height: 75%;
-      width: 75%;
+    .form h3 {
+      text-align: center;
     }
   }

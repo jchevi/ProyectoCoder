@@ -1,44 +1,75 @@
+// YOUTUBE SECTION 
+
 .index__video {
     color: orange;
     font-size: 40px;
 }
 
 .section1 {
-    background-image: url("../multimedia/video_background_image.JPG");
-    background-size: cover;
-    background-position: center center;
-    font-family: $font1;
-    color: orange;
-    font-size: 40px;
-    height: 700px;
+  height: 50rem;
+  color: #ffa600;
+  font-size: 1.5rem;
 }
 
-.section span:hover {
-    color: rgb(255, 188, 62);
-    background-color: black;
+.videocontent {
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.363);
+  width: 100%;
+  padding: 20px;
 }
-  
-  .section1 {
-    height: 600px;
-    background-image: url("../multimedia/video_background_image.JPG");
-    background-size: cover;
-    background-position: center center;
-    color: #ffa600;
-    font-size: 1.5rem;
+
+.section1 .seeMore button {
+  background-color: rgba(255, 255, 255, 0.089);
+  color: #ffa600;
+  padding: 5px 20px 5px 20px;
+  margin-top: 50px;
+  transition: all 1s;
+}
+
+.section1 button:hover {
+  color: #ffbe47;
+}
+
+#background-video {
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  object-fit: cover;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+// CAROUSEL SECTION  
+
+.carousel-item {
+  height: 50rem;
+  background: white;
+  background-position: bottom;
+  background-size: cover;
+}
+
+.carousel-item img {
+  position: absolute;
+  bottom: 0;
   }
-  
-  .section1 .seeMore span {
-    background-color: rgba(0, 0, 0, 0.1);
-    padding: 5px 20px 5px 20px;
-    margin-top: 50px;
-    transition: all 1s;
+
+// RESPONSIVE
+
+@media only screen and (max-width: 1240px) {
+  .carousel-item {
+    height: 42rem;
   }
-  
-  .section1 span:hover {
-    color: #ffbe47;
+}
+
+@media only screen and (max-width: 1120px) {
+  .carousel-item {
+    height: 30rem;
   }
-  
-  @media only screen and (max-width: 1024px) {
+}
+
+@media only screen and (max-width: 1024px) {
     .nav_styling--index {
       background-position: 70% 50% !important;
     }
@@ -46,9 +77,24 @@
       height: 75%;
       width: 75%;
     }
+  .carousel-item {
+    height: 27rem;
   }
+}
+
+@media only screen and (max-width: 850px) {
+  .carousel-item {
+    height: 25rem;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .carousel-item {
+    height: 23rem;
+  }
+}
   
-  @media only screen and (max-width: 580px) {
+@media only screen and (max-width: 580px) {
     .nav_styling--index {
       background-position: 85% 50% !important;
     }
@@ -56,4 +102,21 @@
       height: 75%;
       width: 75%;
     }
+    .carousel-item {
+      height: 20rem;
+    }
   }
+
+  @media (min-aspect-ratio: 16/9) {
+    #background-video {
+        width:100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  #background-video { 
+      width:auto;
+      height: 100%;
+  }
+}

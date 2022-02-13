@@ -13,7 +13,7 @@ header {
     & .nav_styling--index {
         @extend %custom_nav_properties;
         height: 800px;
-        background-image: url("../multimedia/index_background3.jpg");
+        background-image: url("../multimedia/index/index_main_background.webp");
         & .navbar {
             background: rgba(0, 0, 0, 0) !important;
             & .navbar-brand {
@@ -22,6 +22,29 @@ header {
                 color: white !important;
                 & .nav-link {
                     color: rgba(0, 0, 0, 0.658) !important;
+                        &:hover {
+                        color: white !important;
+                    }
+                }
+            }
+        }        
+    }
+}
+
+// TRABAJOS HEADER
+
+header {
+    & .nav_styling--trabajos {
+        @extend %custom_nav_properties;
+        background: white !important;
+        & .navbar {
+            background: white !important;
+            & .navbar-brand {
+                font-family: $font1;
+                font-size: 40px;
+                color: black !important;
+                & .nav-link {
+                    color: white !important;
                         &:hover {
                         color: white !important;
                     }
@@ -52,5 +75,17 @@ header {
             }
         }        
     }
+}
+
+#navbarscroll.scrolled  {
+    background: black !important;
+    transition: background 0.5s;
+}
+
+.navbar-brand:hover {
+    background-color: white;
+    transform: scale(1.5, 0); /* Equal to scaleX(2) scaleY(0.5) */
+    transform-origin: center;
+    transition: 300ms;
 }
 

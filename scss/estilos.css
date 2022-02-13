@@ -1,4 +1,4 @@
-header .nav_styling--index, header .nav_styling {
+header .nav_styling--index, header .nav_styling--trabajos, header .nav_styling {
   background-size: cover;
   background-position: center center;
   font-family: "Open Sans", sans-serif;
@@ -7,7 +7,7 @@ header .nav_styling--index, header .nav_styling {
 
 header .nav_styling--index {
   height: 800px;
-  background-image: url("../multimedia/index_background3.jpg");
+  background-image: url("../multimedia/index/index_main_background.webp");
 }
 
 header .nav_styling--index .navbar {
@@ -25,6 +25,28 @@ header .nav_styling--index .navbar .navbar-brand .nav-link {
 }
 
 header .nav_styling--index .navbar .navbar-brand .nav-link:hover {
+  color: white !important;
+}
+
+header .nav_styling--trabajos {
+  background: white !important;
+}
+
+header .nav_styling--trabajos .navbar {
+  background: white !important;
+}
+
+header .nav_styling--trabajos .navbar .navbar-brand {
+  font-family: "Open Sans", sans-serif;
+  font-size: 40px;
+  color: black !important;
+}
+
+header .nav_styling--trabajos .navbar .navbar-brand .nav-link {
+  color: white !important;
+}
+
+header .nav_styling--trabajos .navbar .navbar-brand .nav-link:hover {
   color: white !important;
 }
 
@@ -50,45 +72,88 @@ header .nav_styling .navbar .navbar-brand .nav-link:hover {
   color: white !important;
 }
 
+#navbarscroll.scrolled {
+  background: black !important;
+  -webkit-transition: background 0.5s;
+  transition: background 0.5s;
+}
+
+.navbar-brand:hover {
+  background-color: white;
+  -webkit-transform: scale(1.5, 0);
+          transform: scale(1.5, 0);
+  /* Equal to scaleX(2) scaleY(0.5) */
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-transition: 300ms;
+  transition: 300ms;
+}
+
 .index__video {
   color: orange;
   font-size: 40px;
 }
 
 .section1 {
-  background-image: url("../multimedia/video_background_image.JPG");
-  background-size: cover;
-  background-position: center center;
-  font-family: "Open Sans", sans-serif;
-  color: orange;
-  font-size: 40px;
-  height: 700px;
-}
-
-.section span:hover {
-  color: #ffbc3e;
-  background-color: black;
-}
-
-.section1 {
-  height: 600px;
-  background-image: url("../multimedia/video_background_image.JPG");
-  background-size: cover;
-  background-position: center center;
+  height: 50rem;
   color: #ffa600;
   font-size: 1.5rem;
 }
 
-.section1 .seeMore span {
-  background-color: rgba(0, 0, 0, 0.1);
+.videocontent {
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.363);
+  width: 100%;
+  padding: 20px;
+}
+
+.section1 .seeMore button {
+  background-color: rgba(255, 255, 255, 0.089);
+  color: #ffa600;
   padding: 5px 20px 5px 20px;
   margin-top: 50px;
   -webkit-transition: all 1s;
   transition: all 1s;
 }
 
-.section1 span:hover {
+.section1 button:hover {
   color: #ffbe47;
+}
+
+#background-video {
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.carousel-item {
+  height: 50rem;
+  background: white;
+  background-position: bottom;
+  background-size: cover;
+}
+
+.carousel-item img {
+  position: absolute;
+  bottom: 0;
+}
+
+@media only screen and (max-width: 1240px) {
+  .carousel-item {
+    height: 42rem;
+  }
+}
+
+@media only screen and (max-width: 1120px) {
+  .carousel-item {
+    height: 30rem;
+  }
 }
 
 @media only screen and (max-width: 1024px) {
@@ -99,6 +164,21 @@ header .nav_styling .navbar .navbar-brand .nav-link:hover {
     height: 75%;
     width: 75%;
   }
+  .carousel-item {
+    height: 27rem;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .carousel-item {
+    height: 25rem;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .carousel-item {
+    height: 23rem;
+  }
 }
 
 @media only screen and (max-width: 580px) {
@@ -108,6 +188,23 @@ header .nav_styling .navbar .navbar-brand .nav-link:hover {
   .section1 .index__video iframe {
     height: 75%;
     width: 75%;
+  }
+  .carousel-item {
+    height: 20rem;
+  }
+}
+
+@media (min-aspect-ratio: 16 / 9) {
+  #background-video {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-aspect-ratio: 16 / 9) {
+  #background-video {
+    width: auto;
+    height: 100%;
   }
 }
 
@@ -134,9 +231,8 @@ header .nav_styling--index .navbar .navbar-brand .nav-link {
 
 .team-boxed h2 {
   font-weight: bold;
-  margin-bottom: 40px;
-  padding-top: 40px;
-  color: inherit;
+  margin-bottom: 4rem;
+  color: white;
 }
 
 .team-boxed .people {
@@ -207,28 +303,99 @@ header .nav_styling--index .navbar .navbar-brand .nav-link {
   background: #f1f1f1 !important;
 }
 
+.map-responsive {
+  overflow: hidden;
+  position: relative;
+}
+
 #contactSection iframe {
   position: relative;
   overflow: hidden;
+  left: 0;
+  top: 0;
 }
 
 @media only screen and (max-width: 1024px) {
-  .nav_styling--index {
-    background-position: 70% 50% !important;
+  .donde {
+    padding-top: 2rem;
+    text-align: center;
   }
-  .section1 .index__video iframe {
-    height: 75%;
-    width: 75%;
+  .form h3 {
+    text-align: center;
+  }
+  iframe {
+    text-align: center;
+    width: 100%;
   }
 }
 
 @media only screen and (max-width: 580px) {
-  .nav_styling--index {
-    background-position: 85% 50% !important;
+  .donde {
+    padding-top: 2rem;
+    text-align: center;
   }
-  .section1 .index__video iframe {
-    height: 75%;
-    width: 75%;
+  .form h3 {
+    text-align: center;
+  }
+}
+
+.trabajos {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.trabajos {
+  visibility: hidden;
+}
+
+.fadeIn {
+  -webkit-animation: animat_show 0.8s;
+  animation: animat_show 0.8s;
+  visibility: visible !important;
+}
+
+@-webkit-keyframes animat_show {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.row1col1height1 {
+  height: 20rem;
+}
+
+.row1col2height1 {
+  height: 60rem;
+}
+
+.row2col1height1 {
+  height: 80rem;
+}
+
+.row2col2height1 {
+  height: 20rem;
+}
+
+body {
+  overflow-x: hidden !important;
+  /* Hide horizontal scrollbar */
+}
+
+@media only screen and (max-width: 850px) {
+  .row1col1height1 {
+    height: 20rem;
+  }
+  .row1col2height1 {
+    height: 20rem;
+  }
+  .row2col1height1 {
+    height: 20rem;
+  }
+  .row2col2height1 {
+    height: 20rem;
   }
 }
 
@@ -272,5 +439,79 @@ body {
 a, a:hover, a:focus, a:active {
   text-decoration: none;
   color: inherit;
+}
+
+@-webkit-keyframes bounce {
+  0%, 100%, 20%, 50%, 80% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+
+@keyframes bounce {
+  0%, 100%, 20%, 50%, 80% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+
+.scrollToTopBtn {
+  background-color: black;
+  border: 1px solid white;
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+  font-size: 1.5rem;
+  line-height: 3rem;
+  width: 3rem;
+  /* place it at the bottom right corner */
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  /* keep it at the top of everything else */
+  z-index: 100;
+  /* hide with opacity */
+  opacity: 0;
+  /* also add a translate effect */
+  -webkit-transform: translateY(100px);
+          transform: translateY(100px);
+  /* and a transition */
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+}
+
+.showBtn {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.scrollToTopBtn:hover {
+  cursor: pointer;
+  -webkit-animation-name: bounce;
+          animation-name: bounce;
+  -moz-animation-name: bounce;
 }
 /*# sourceMappingURL=estilos.css.map */

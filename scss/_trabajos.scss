@@ -1,29 +1,65 @@
-.landscapes {
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-  }
+.trabajos {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
   
-  #landscapes__row1 {
-    margin-top: 3rem;
-  }
-  
-  .events {
-    margin-bottom: 3rem;
-  }
-  
-  .weddings {
-    margin-bottom: 3rem;
-  }
-  
-  .portraits {
-    margin-bottom: 3rem;
-  }
-  
-  #trabajos h2 {
-    font-weight: 100;
-  }
+// IMAGES FADE IN CSS
 
-  .foto:hover {
-    transform: scale(2);
-    transition: all 0.9s;
+.trabajos {
+  visibility: hidden;
+}
+
+.fadeIn {
+  -webkit-animation: animat_show 0.8s;
+  animation: animat_show 0.8s;
+  visibility: visible !important;
+}
+
+@-webkit-keyframes animat_show{
+  0%{opacity:0}
+  100%{opacity:1}
+}
+
+// ROWS & COLUMNS SPACING
+
+.row1col1height1 {
+  height: 20rem;
+}
+
+.row1col2height1 {
+  height: 60rem;
+}
+
+.row2col1height1 {
+  height: 80rem;
+}
+
+.row2col2height1 {
+  height: 20rem;
+}
+
+// KILL OVERFLOW
+
+body {
+  overflow-x: hidden !important; /* Hide horizontal scrollbar */
+}
+
+// RESPONSIVE
+
+@media only screen and (max-width: 850px) {
+  .row1col1height1 {
+    height: 20rem;
+  }
+  
+  .row1col2height1 {
+    height: 20rem;
+  }
+  
+  .row2col1height1 {
+    height: 20rem;
+  }
+  
+  .row2col2height1 {
+    height: 20rem;
+  }
 }
